@@ -1,0 +1,15 @@
+{
+  "name": "testingplace",
+  "version": "1.0.0",
+  "description": "마구잡이로 테스트를 할수 있는 공간입니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.7.5"
+  }
+}
