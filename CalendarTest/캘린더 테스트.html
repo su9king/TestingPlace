@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduler</title>
+    <!-- FullCalendar CSS -->
+    
+</head>
+<body>
+    <div id="calendar"></div>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                customButtons: {
+                    myCustomLabel: {
+                        text: 'h브르르르르르아!',
+                        
+                    }
+                },
+                headerToolbar: {
+                    left: 'prev,today,next',
+                    center: "myCustomLabel",
+                    right: ''
+                },
+                events: [
+                    {
+                        title: 'Event 1',
+                        start: '2024-07-01',
+                    },
+                    {
+                        title: 'Event 2',
+                        start: '2024-07-05',
+                        end: '2024-07-07'
+                    }
+                ]
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+</html>

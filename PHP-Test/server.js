@@ -27,6 +27,17 @@ const server = http.createServer((req,res) => {
             res.end(data);
         });
     }
+    else if (req.url === '/index.css') {
+        fs.readFile('./index.css', (err, data) => {
+            if (err) {
+                res.writeHead(500);
+                return res.end('Error loading index.js');
+            }
+
+            res.writeHead(200);
+            res.end(data);
+        });
+    }
 
     
 });

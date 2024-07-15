@@ -1,4 +1,4 @@
-
+console.log("일단 열렸다우!")
 const socket  = io();
 function sendMessage(){
 
