@@ -3,12 +3,10 @@
 
 #include <string>
 #include <vector>
-#include "Resources/Item.h"     
-#include "Resources/Monster.h"
-#include "Resources/Player.h"
-#include "Resources/Tool.h"
-
-using namespace std;
+#include "Item.h"     
+#include "Monster.h"
+#include "Player.h"
+#include "Tool.h"
 
 class World {
 
@@ -22,7 +20,7 @@ public:
 
 	void login() {}
 
-	void register() {}
+	//void register() {}
 
 };
 
